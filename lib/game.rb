@@ -22,5 +22,8 @@ class Game
   def current_player
      board.turn_count.odd? ? player_2 : player_1
   end
-  
+
+  def draw?
+    @board.full? && !won? ? true : false
+  end
 end
