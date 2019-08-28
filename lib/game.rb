@@ -38,8 +38,8 @@ class Game
     @board.full? && !won? ? true : false
   end
   
-    def over?
+  def over?
      (won? || draw?) ? true : false
-     # IF board is not full, game is in progress (FALSE), ELSE, game is over (TRUE)
   end
+  
 end
